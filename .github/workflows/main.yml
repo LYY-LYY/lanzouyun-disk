@@ -38,4 +38,4 @@ jobs:
           yarn
           yarn react-build
           yarn tsc-electron-build
-          electron-builder
+          yarn electron-builder
