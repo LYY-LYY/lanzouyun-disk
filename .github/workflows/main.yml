@@ -36,5 +36,6 @@ jobs:
       - name: install, build
         run: |
           yarn
-          yarn run react-build
-          yarn run electron-build
+          yarn react-build
+          yarn tsc-electron-build
+          electron-builder
