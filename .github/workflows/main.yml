@@ -33,9 +33,8 @@ jobs:
           node-version: v14.19.0
 
       # Runs a single command using the runners shell
-      - name: install
-        run: yarn
-
-      # Runs a set of commands using the runners shell
-      - name: buliid
-        run: yarn build
+      - name: install, build
+        run: |
+          yarn
+          yarn run react-build
+          yarn run electron-build
